@@ -1,0 +1,5 @@
+command /send <player> <text>:
+	permission: players.send
+	trigger:
+		execute console command "/mvtp %arg 1% %arg 2%"
+		message "Sent %arg 1% to %arg 2%"
