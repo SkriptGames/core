@@ -11,8 +11,8 @@ command /msg [<player>] [<text>]:
 			stop
 		set {chat.private.reply.%player%} to arg 1
 		set {chat.private.reply.%arg 1%} to player
-		send "&c[MSG] &aTO: %arg 1% &e->&c %arg 2%" to player
-		send "&c[MSG] &eFROM: %player% &e->&c %arg 2%" to arg 1
+		send "&c%arg 1% &4->&c %arg 2%" to player
+		send "&c%arg 1% &4->&c %arg 2%" to arg 1
 
 command /reply [<text>]:	
 	description: Reply command.
@@ -22,6 +22,6 @@ command /reply [<text>]:
 		if arg-1 is not set:
 			message "&6Specify a message!%nl%&e/reply You're amazing!"
 			stop
-		send "&c[MSG] &aTO: %{chat.private.reply.%player%}% &e->&c %arg 1%" to player
-		send "&c[MSG] &eFROM: %player% &e->&c %arg 1%" to {chat.private.reply.%player%}
+		send "&c%arg 1% &4->&c %arg 2%" to player
+		send "&c%arg 1% &4->&c %arg 2%" to {chat.private.reply.%player%}
 		
