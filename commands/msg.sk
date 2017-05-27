@@ -1,5 +1,5 @@
 command /msg [<player>] [<text>]:
-	description: Whisper another player
+	description: Private message another player.
 	usage: /msg <player> <message>
 	aliases: /m
 	trigger:
@@ -15,7 +15,7 @@ command /msg [<player>] [<text>]:
 		send "&c%arg 1% &4->&c %arg 2%" to arg 1
 
 command /reply [<text>]:	
-	description: Reply command.
+	description: Reply to a player's private message.
 	usage: /reply <message>
 	aliases: /r
 	trigger:
