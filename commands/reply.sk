@@ -1,0 +1,10 @@
+command /reply [<text>]:	
+	description: Reply to a player's private message.
+	usage: /reply <message>
+	aliases: /r
+	trigger:
+		if arg-1 is not set:
+			message "&6Specify a message!%nl%&e/reply You're amazing!"
+			stop
+		send "&c%arg 1% &4->&c %arg 2%" to player
+		send "&c%arg 1% &4->&c %arg 2%" to {chat.private.reply.%player%}
