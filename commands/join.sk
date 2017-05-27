@@ -1,0 +1,7 @@
+command /join [<text>]:
+	trigger:
+		if arg-1 is "agario":
+			message "&8[&aAgario&8] &eSending you to &6Agario&e!"
+			execute console command "/send %player% agario"
+		else:
+			message "&8[&aSkriptGames&8] &eUnkown Game!"
