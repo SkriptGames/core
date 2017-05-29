@@ -1,5 +1,0 @@
-command /announce [<text>]:
-	permission: server.announce
-	trigger:
-		broadcast "&6[&eServer Announcement&6] &e%arg 1%"
-		send message "[Server Announcement] %arg 1% - @everyone" to channel "318190994233360385" as bot "Bot"
